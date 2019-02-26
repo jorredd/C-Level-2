@@ -1,0 +1,6 @@
+﻿  Menu.cpp
+c:\users\jredd\source\repos\c++\assignment 4 using complex types - vectors\menu.cpp(28): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+c:\users\jredd\source\repos\c++\assignment 4 using complex types - vectors\main.cpp(171): warning C4101: 'c': unreferenced local variable
+  Generating Code...
+  Assignment 4 Using Complex Types - Vectors.vcxproj -> C:\Users\jredd\source\repos\C++\Debug\Assignment 4 Using Complex Types - Vectors.exe
