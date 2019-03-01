@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Journal 4 - Friends", "Jour
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Journal 5 - Dynamic Memory", "Journal 5 - Dynamic Memory\Journal 5 - Dynamic Memory.vcxproj", "{F0E6F278-7474-4ABF-9744-05863EB12CF0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment 5 Operator Overloading", "Assignment 5 Operator Overloading\Assignment 5 Operator Overloading.vcxproj", "{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{F0E6F278-7474-4ABF-9744-05863EB12CF0}.Release|x64.Build.0 = Release|x64
 		{F0E6F278-7474-4ABF-9744-05863EB12CF0}.Release|x86.ActiveCfg = Release|Win32
 		{F0E6F278-7474-4ABF-9744-05863EB12CF0}.Release|x86.Build.0 = Release|Win32
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Debug|x64.ActiveCfg = Debug|x64
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Debug|x64.Build.0 = Debug|x64
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Debug|x86.Build.0 = Debug|Win32
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x64.ActiveCfg = Release|x64
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x64.Build.0 = Release|x64
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x86.ActiveCfg = Release|Win32
+		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
