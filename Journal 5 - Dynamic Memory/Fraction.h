@@ -15,8 +15,8 @@ class Fraction
 {
 
 private:
-	int num;
-	int den;
+	int *num;
+	int *den;
 
 
 public:
@@ -24,7 +24,9 @@ public:
 	Fraction();
 	Fraction(int num, int den);
 	Fraction(string fraction);
-
+    Fraction(const Fraction &f);
+	~Fraction();
+	void create();
 	void setFraction(int n, int d);
 	Fraction add(const Fraction &f);
 	Fraction sub(const Fraction &f);

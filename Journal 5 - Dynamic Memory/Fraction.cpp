@@ -12,69 +12,89 @@ using namespace std;
 
 Fraction::Fraction() //default constructor
 {
+	this->create();
 	this->setFraction(1, 1);
-}Fraction::Fraction(int num, int den) //constructor
+}Fraction::~Fraction() //de-constructor //======================JOURNAL 
 {
+	delete this->num;
+	delete this->den;
+	cout << "Obj Deleted" << endl;
+} 
+
+Fraction::Fraction(int num, int den) //constructor
+{
+	this->create();
 	this->setFraction(num, den);
 }
 Fraction::Fraction(string fraction) //string constructor
 {
+	this->create();
 	int num = (int)fraction[0] - '0'; //converts 1st number to int value then subtracts by 48 to get actual value
 	int den = (int)fraction[2] - '0';//converts 2nd number to int value then subtracts by 48 to get actual value
 
 	this->setFraction(num, den);
 }
+Fraction::Fraction(const Fraction &f)
+{
+	this->create();
+	this->setFraction(f.getNum(), f.getDen());
+}
+void Fraction::create()
+{
+	this->num = new int;
+	this->den = new int;
+}
 void Fraction::setFraction(int n, int d)
 {
-	this->num = n;
-	this->den = d;
+	*this->num = n;
+	*this->den = d;
 }
 
 Fraction Fraction::add(const Fraction &f)
 {
 	Fraction tmp;
-	tmp.num = (this->num * f.den) + (f.num * this->den);
-	tmp.den = f.den * den;
+	*tmp.num = (*this->num * *f.den) + (*f.num * *this->den);
+	*tmp.den = *f.den * *this->den;
 	return tmp;
 }
 Fraction Fraction::sub(const Fraction &f)
 {
 	Fraction tmp;
-	tmp.num = (this->num * f.den) - (f.num * this->den);
-	tmp.den = f.den * den;
+	*tmp.num = (*this->num * *f.den) - (*f.num * *this->den);
+	*tmp.den = *f.den * *this->den;
 	return tmp;
 }
 Fraction Fraction::mult(const Fraction &f)
 {
 	Fraction tmp;
-	tmp.num = this->num * f.num;
-	tmp.den = f.den * this->den;
+	*tmp.num = *this->num * *f.num;
+	*tmp.den = *f.den * *this->den;
 	return tmp;
 }
 Fraction Fraction::div(const Fraction &f)
 {
 	Fraction tmp;
-	tmp.num = this->num * f.den;
-	tmp.den = f.num * den;
-	if (tmp.den < 0)
+	*tmp.num = *this->num * *f.den;
+	*tmp.den = *f.num * *this->den;
+	if (*tmp.den < 0)
 	{
-		tmp.den *= -1;
-		tmp.num *= -1;
+		*tmp.den *= -1;
+		*tmp.num *= -1;
 	}
 
 	return tmp;
 }
 void Fraction::printFraction()
 {
-	cout << this->num << "/" << this->den << endl;
+	cout << *this->num << "/" << *this->den << endl;
 }
 int Fraction::getNum() const
 {
-	return this->num;
+	return *this->num;
 }
 int Fraction::getDen() const
 {
-	return this->den;
+	return *this->den;
 }
 Fraction Fraction::operator+(const Fraction &f)
 {
@@ -96,16 +116,16 @@ Fraction Fraction::operator/(const Fraction &f)
 }
 Fraction &Fraction::operator=(const Fraction &f)
 {
-	this->setFraction(f.num, f.den);
+	this->setFraction(*f.num, *f.den);
 	return *this;
 }
 //overloads the istream and ostream to be used with my class
 istream &operator >> (istream & input, Fraction & f)
 {
 	cout << "Enter a numerator" << endl;
-	input >> f.num;
+	input >> *f.num;
 	cout << "Enter a denominator" << endl;
-	input >> f.den;
+	input >> *f.den;
 	return input;
 }
 ostream &operator << (ostream & output, Fraction & f)
