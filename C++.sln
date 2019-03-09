@@ -23,6 +23,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Journal 5 - Dynamic Memory"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment 5 Operator Overloading", "Assignment 5 Operator Overloading\Assignment 5 Operator Overloading.vcxproj", "{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Journal 6 - Static Members", "Journal 6 - Static Members\Journal 6 - Static Members.vcxproj", "{B294C7B1-F239-4D8B-8030-8EB19B1165D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment 6 - More Complex Types", "Assignment 6 - More Complex Types\Assignment 6 - More Complex Types.vcxproj", "{D359F91B-4D26-43FB-B7DC-F8394225863A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment 7 Dynamic Memory", "Assignment 7 Dynamic Memory\Assignment 7 Dynamic Memory.vcxproj", "{4C53D75F-823B-49AD-B8ED-158D51BA5608}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment 8 Namespaces, Static Variables", "Assignment 8 Namespaces, Static Variables\Assignment 8 Namespaces, Static Variables.vcxproj", "{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +119,38 @@ Global
 		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x64.Build.0 = Release|x64
 		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x86.ActiveCfg = Release|Win32
 		{2197FBA5-BC67-4503-AD21-64DAF5F3F7ED}.Release|x86.Build.0 = Release|Win32
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Debug|x64.ActiveCfg = Debug|x64
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Debug|x64.Build.0 = Debug|x64
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Debug|x86.ActiveCfg = Debug|Win32
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Debug|x86.Build.0 = Debug|Win32
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Release|x64.ActiveCfg = Release|x64
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Release|x64.Build.0 = Release|x64
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Release|x86.ActiveCfg = Release|Win32
+		{B294C7B1-F239-4D8B-8030-8EB19B1165D9}.Release|x86.Build.0 = Release|Win32
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Debug|x64.ActiveCfg = Debug|x64
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Debug|x64.Build.0 = Debug|x64
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Debug|x86.Build.0 = Debug|Win32
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Release|x64.ActiveCfg = Release|x64
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Release|x64.Build.0 = Release|x64
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Release|x86.ActiveCfg = Release|Win32
+		{D359F91B-4D26-43FB-B7DC-F8394225863A}.Release|x86.Build.0 = Release|Win32
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Debug|x64.ActiveCfg = Debug|x64
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Debug|x64.Build.0 = Debug|x64
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Debug|x86.ActiveCfg = Debug|Win32
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Debug|x86.Build.0 = Debug|Win32
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Release|x64.ActiveCfg = Release|x64
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Release|x64.Build.0 = Release|x64
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Release|x86.ActiveCfg = Release|Win32
+		{4C53D75F-823B-49AD-B8ED-158D51BA5608}.Release|x86.Build.0 = Release|Win32
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Debug|x64.ActiveCfg = Debug|x64
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Debug|x64.Build.0 = Debug|x64
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Debug|x86.Build.0 = Debug|Win32
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Release|x64.ActiveCfg = Release|x64
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Release|x64.Build.0 = Release|x64
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Release|x86.ActiveCfg = Release|Win32
+		{0C7E859F-DB8C-4317-9AFE-EFE595C0026B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
