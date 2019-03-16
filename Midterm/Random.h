@@ -2,6 +2,7 @@
 #include "Integer.h"
 #include <vector>
 #include <iostream>
+#include <random>
 
 using std::vector;
 

@@ -4,6 +4,9 @@
 #include <vector>
 #include <iostream>
 #include <ctime>
+#include <random>
+
+
 
 vector<double>Random::rDoubles;
 double Random::min = 0;
@@ -97,16 +100,31 @@ void Random::setRange(Double min, Double max)
 
 void Random::shuffle()
 {
+	using namespace std;
+	random_device rd;
+	mt19937 g(rd());
+
+	std::shuffle(rDoubles.begin(), rDoubles.end(), g);
+
 }
+
+
 
 void Random::fillVect()
 {
+	int count = 0;
 	vector<double>::iterator p;
 	for (p = rDoubles.begin(); p < rDoubles.end(); p++)
 	{
 		*p = (((double)rand() / (double)RAND_MAX) * (Random::max - Random::min)) + Random::min;
+		if (count == 225)
+		{
+			shuffle();
+		}
+		count++;
 	}
-			
+
+	shuffle();
 }
 
 Random::~Random()
