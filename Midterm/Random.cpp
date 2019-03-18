@@ -1,3 +1,10 @@
+// Jordan Redd 
+// 0433589
+// 1/17/19
+// CSIS 123A-3488
+// Prof. Rickman
+// Midterm
+
 #include "Random.h"
 #include "Double.h"
 #include "Integer.h"
@@ -65,26 +72,46 @@ Random::Random(double min, double max)
 
 Random::Random(Double min, Double max)
 {
+	bool vEmpty = rDoubles.empty();
+	if (!vEmpty) {
+		srand(time(0));
+		rDoubles.clear();
+		rDoubles.resize(250);
+		setRange(min, max);
+		fillVect();
+	}
+	else {
+		srand(time(0));
+		rDoubles.resize(250);
+		setRange(min, max);
+		fillVect();
+	}
 }
 
 int Random::nextInt()
 {
-	return 0;
+	return (int)rDoubles.front(); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front as an integer
 }
 
 Integer Random::nextInteger()
 {
-	return Integer();
+	shuffle();
+	int shift = (int)rDoubles.front(); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front as a Integer
+	return Integer(shift);
 }
 
 double Random::nextDbl()
 {
-	return 0.0;
+	shuffle();
+
+	return rDoubles.front(); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front 
 }
 
 Double Random::nextDouble()
 {
-	return Double();
+	shuffle();
+	return Double(rDoubles.front()); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front as a Double
+
 }
 
 void Random::setRange(double min, double max)
@@ -95,6 +122,9 @@ void Random::setRange(double min, double max)
 
 void Random::setRange(Double min, Double max)
 {
+
+	Random::min = min.toDouble();
+	Random::max = max.toDouble();
 }
 
 
@@ -107,8 +137,6 @@ void Random::shuffle()
 	std::shuffle(rDoubles.begin(), rDoubles.end(), g);
 
 }
-
-
 
 void Random::fillVect()
 {
@@ -126,7 +154,13 @@ void Random::fillVect()
 
 	shuffle();
 }
+ostream &operator << (ostream & output, Random & r)
+{
+	Random::shuffle();
+	output << r.rDoubles.front();
 
+	return output;
+}
 Random::~Random()
 {
 }
