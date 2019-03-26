@@ -143,6 +143,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Double.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="Integer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Double.cpp" />
+    <ClCompile Include="Integer.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
