@@ -1,9 +1,17 @@
 // Jordan Redd 
 // 0433589
-// 1/17/19
+// 3/18/19
 // CSIS 123A-3488
 // Prof. Rickman
 // Midterm
+/*
+Description:
+Creates random numbers. This claas uses static variables so when one instance is created the actual randomized numbers could be accessed through any other instance created. Howeber
+whenever a new instance is created the numbers are randomized again.
+*/
+#ifndef RANDOM
+#define RANDOM
+
 
 #include "Double.h"
 #include "Integer.h"
@@ -28,9 +36,11 @@ public:
 	Random(Double min, Double max);
 
 	int nextInt();
-	Integer nextInteger();
 	double nextDbl();
+
+	Integer nextInteger();
 	Double nextDouble();
+
 	void setRange(double min, double max);
 	void setRange(Double min, Double max);
 
@@ -38,12 +48,14 @@ public:
 
 	~Random();
 private:
+	static vector<double> rDoubles;
+
 	static double min;
 	static double max;
-	
-	static vector<double> rDoubles;
+
 	static void shuffle();
 	static void fillVect();
 
 };
 
+#endif // !RANDOM

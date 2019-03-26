@@ -1,3 +1,5 @@
 ﻿  main.cpp
-c:\users\jredd\source\repos\c++\c++\main.cpp(70): warning C4101: 'c': unreferenced local variable
-  C++.vcxproj -> C:\Users\jredd\source\repos\C++\Debug\C++.exe
+c:\users\jredd\source\repos\git\c++\c++\main.cpp(70): warning C4101: 'c': unreferenced local variable
+  Menu.cpp
+  Generating Code...
+  C++.vcxproj -> C:\Users\jredd\source\repos\git\C++\Debug\C++.exe

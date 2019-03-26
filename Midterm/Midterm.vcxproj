@@ -144,11 +144,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Double.h" />
+    <ClInclude Include="Guid.h" />
+    <ClInclude Include="includes.h" />
     <ClInclude Include="Integer.h" />
     <ClInclude Include="Random.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Double.cpp" />
+    <ClCompile Include="Guid.cpp" />
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Random.cpp" />

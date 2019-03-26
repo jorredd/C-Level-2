@@ -1,3 +1,9 @@
-﻿  main.cpp
-c:\users\jredd\source\repos\git\c++\assignment 5 operator overloading\main.cpp(196): warning C4101: 'c': unreferenced local variable
+﻿  Double.cpp
+  Fraction.cpp
+  Integer.cpp
+  main.cpp
+c:\users\jredd\source\repos\git\c++\assignment 5 operator overloading\main.cpp(194): warning C4101: 'c': unreferenced local variable
+  Menu.cpp
+c:\users\jredd\source\repos\git\c++\assignment 5 operator overloading\menu.cpp(28): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   Assignment 5 Operator Overloading.vcxproj -> C:\Users\jredd\source\repos\git\C++\Debug\Assignment 5 Operator Overloading.exe

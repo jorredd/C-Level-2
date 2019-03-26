@@ -1,10 +1,14 @@
 // Jordan Redd 
 // 0433589
-// 1/17/19
+// 3/18/19
 // CSIS 123A-3488
 // Prof. Rickman
 // Midterm
-
+/*
+Description:
+Creates random numbers. This claas uses static variables so when one instance is created the actual randomized numbers can be accessed through any other instance created. Howeber
+whenever a new instance is created the numbers are randomized again.
+*/
 #include "Random.h"
 #include "Double.h"
 #include "Integer.h"
@@ -13,11 +17,9 @@
 #include <ctime>
 #include <random>
 
-
-
 vector<double>Random::rDoubles;
 double Random::min = 0;
-double Random::max = RAND_MAX; //clean up other areas where i give these values
+double Random::max = RAND_MAX; 
 
 Random::Random()
 {
@@ -90,30 +92,29 @@ Random::Random(Double min, Double max)
 
 int Random::nextInt()
 {
-	return (int)rDoubles.front(); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front as an integer
+	shuffle();
+	return (int)rDoubles.front(); // Im not entriely sure how these next functions are supposed to operate based on the instructions so im just shuffling and returning the front as an integer
 }
 
 Integer Random::nextInteger()
 {
 	shuffle();
-	int shift = (int)rDoubles.front(); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front as a Integer
+	int shift = (int)rDoubles.front(); // Im not entriely sure how these next functions are supposed to operate based on the instructions so im just shuffling and returning the front as a Integer
 	return Integer(shift);
 }
 
 double Random::nextDbl()
 {
 	shuffle();
-
-	return rDoubles.front(); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front 
+	return rDoubles.front(); // Im not entriely sure how these next functions are supposed to operate based on the instructions so im just shuffling and returning the front 
 }
 
 Double Random::nextDouble()
 {
 	shuffle();
-	return Double(rDoubles.front()); // Im not entriely sure how these next classes are supposed to operate based on the instructions so im just shuffling and returning the front as a Double
+	return Double(rDoubles.front()); // Im not entriely sure how these next functions are supposed to operate based on the instructions so im just shuffling and returning the front as a Double
 
 }
-
 void Random::setRange(double min, double max)
 {
 	Random::min = min;
@@ -126,7 +127,6 @@ void Random::setRange(Double min, Double max)
 	Random::min = min.toDouble();
 	Random::max = max.toDouble();
 }
-
 
 void Random::shuffle()
 {
