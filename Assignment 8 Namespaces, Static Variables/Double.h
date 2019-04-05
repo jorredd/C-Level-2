@@ -17,29 +17,35 @@ hold the returned Double/Integer and with the methods toInt/toDouble We can retu
 using std::string;
 using std::to_string;
 
+namespace jordan {
+
+
+
+
+
 class Double
 {
-private:
-	double num;
-public:
-	Double();
-	Double(double d); //Assignment 3
-	Double(Double *d); //Assignment 3 
-	Double(Integer *i); //Assignment 3
+	private:
+		double num;
+	public:
+		Double();
+		Double(double d); //Assignment 3
+		Double(Double *d); //Assignment 3 
+		Double(Integer *i); //Assignment 3
 
-	void equals(double d);
-	Double add(Double &d);
-	Double sub(Double &d);
-	Double mul(Double &d);
-	Double div(Double &d);
+		void equals(double d);
+		Double add(Double &d);
+		Double sub(Double &d);
+		Double mul(Double &d);
+		Double div(Double &d);
 
-	Double add(double d);
-	Double sub(double d);
-	Double mul(double d);
-	Double div(double d);
-	double toDouble();
+		Double add(double d);
+		Double sub(double d);
+		Double mul(double d);
+		Double div(double d);
+		double toDouble();
 
-	string toString();
-};
-
+		string toString();
+	};
+}
 #endif // !DOUBLE

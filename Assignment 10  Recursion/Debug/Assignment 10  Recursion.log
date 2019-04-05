@@ -1,0 +1,7 @@
+﻿  Double.cpp
+  Integer.cpp
+c:\users\jredd\source\repos\git\c++\assignment 10  recursion\integer.cpp(47): warning C4101: 'pos': unreferenced local variable
+  main.cpp
+  Generating Code...
+  LINK : C:\Users\jredd\source\repos\git\C++\Debug\Assignment 10  Recursion.exe not found or not built by the last incremental link; performing full link
+  Assignment 10  Recursion.vcxproj -> C:\Users\jredd\source\repos\git\C++\Debug\Assignment 10  Recursion.exe

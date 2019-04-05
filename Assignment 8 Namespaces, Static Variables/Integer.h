@@ -15,28 +15,30 @@ hold the returned Double/Integer and with the methods toInt/toDouble We can retu
 #include <string>
 using std::string;
 using std::to_string;
-class Integer
-{
-private:
-	int num;
-public:
-	Integer();//Assignment 3
-	Integer(int d);//Assignment 3
-	Integer(Integer *d);//Assignment 3
+namespace jordan {
+	class Integer
+	{
+	private:
+		int num;
+	public:
+		Integer();//Assignment 3
+		Integer(int d);//Assignment 3
+		Integer(Integer *d);//Assignment 3
 
-	void equals(int d);
-	Integer add(Integer &d);
-	Integer sub(Integer &d);
-	Integer mul(Integer &d);
-	Integer div(Integer &d);
+		void equals(int d);
+		Integer add(Integer &d);
+		Integer sub(Integer &d);
+		Integer mul(Integer &d);
+		Integer div(Integer &d);
 
-	Integer add(int d);
-	Integer sub(int d);
-	Integer mul(int d);
-	Integer div(int d);
-	int toInt();
-	string toString();
+		Integer add(int d);
+		Integer sub(int d);
+		Integer mul(int d);
+		Integer div(int d);
+		int toInt();
+		string toString();
 
-};
+	};
+}
 
 #endif
