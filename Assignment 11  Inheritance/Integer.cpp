@@ -1,9 +1,9 @@
 // Jordan Redd 
 // 0433589
-// 4/5/19
+// 4/14/19
 // CSIS 123A-3488
 // Prof. Rickman
-// Assignment 10
+// Assignment 11
 /* Description:
 Two very identical complex classes. One named Double and one named Integer. Double takes in primitive type double
 and Integer takes in primitive type int. They have public methods that allows addition,multiplication,subtraction,division
@@ -21,10 +21,15 @@ using std::to_string;
 namespace jordan {
 	//Constructors
 	Integer::Integer() {};
-	Integer::Integer(int d) : num(d) {}
-	Integer::Integer(Integer *d) : num(d->toInt()) {}
+	Integer::Integer(int d) : num(d) {
+		this->data = to_string(this->num);
+	}
+	Integer::Integer(Integer *d) : num(d->toInt()) {
+		this->data = to_string(this->num);
+	}
 	Integer::Integer(string s)
 	{
+		this->data = s;
 		string *ptr = &s;
 		isNaN(ptr);
 		size_t ref;
