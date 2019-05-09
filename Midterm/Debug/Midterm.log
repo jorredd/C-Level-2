@@ -1,2 +1,10 @@
 ﻿  Guid.cpp
+  Random.cpp
+c:\users\jredd\source\repos\git\c++\midterm\random.cpp(29): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\jredd\source\repos\git\c++\midterm\random.cpp(35): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\jredd\source\repos\git\c++\midterm\random.cpp(61): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\jredd\source\repos\git\c++\midterm\random.cpp(68): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\jredd\source\repos\git\c++\midterm\random.cpp(79): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\jredd\source\repos\git\c++\midterm\random.cpp(86): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   Midterm.vcxproj -> C:\Users\jredd\source\repos\git\C++\Debug\Midterm.exe
