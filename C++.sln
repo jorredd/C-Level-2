@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assignment 15 - Using the S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Journal 10 - Templates and Exceptions", "Journal 10 - Templates and Exceptions\Journal 10 - Templates and Exceptions.vcxproj", "{103112B5-F376-445A-94CF-B558F8F1A4E4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++ Final", "C++ Final\C++ Final.vcxproj", "{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{103112B5-F376-445A-94CF-B558F8F1A4E4}.Release|x64.Build.0 = Release|x64
 		{103112B5-F376-445A-94CF-B558F8F1A4E4}.Release|x86.ActiveCfg = Release|Win32
 		{103112B5-F376-445A-94CF-B558F8F1A4E4}.Release|x86.Build.0 = Release|Win32
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Debug|x64.ActiveCfg = Debug|x64
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Debug|x64.Build.0 = Debug|x64
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Debug|x86.Build.0 = Debug|Win32
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Release|x64.ActiveCfg = Release|x64
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Release|x64.Build.0 = Release|x64
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Release|x86.ActiveCfg = Release|Win32
+		{BB04104F-D8E3-4F6B-BA55-D2D8CCC16264}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
